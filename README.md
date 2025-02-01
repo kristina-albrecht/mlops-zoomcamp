@@ -23,9 +23,9 @@ Our MLOps Zoomcamp course
 
 ## Taking the course
 
-### 2024 Cohort
+### 2025 Cohort
 
-* **Start**: 13 May 2024 (Monday) at 17:00 CET
+* **Start**: May 2025
 * **Registration link**: https://airtable.com/shrCb8y6eTbPKwSTL
 * Subscribe to our [public Google Calendar](https://calendar.google.com/calendar/?cid=M3Jzbmg0ZDA2aHVsY2M1ZjcyNDJtODNyMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (it works from Desktop only)
 
@@ -71,6 +71,8 @@ To make discussions in Slack more organized:
 
 
 ## Syllabus
+
+We encourage [Learning in Public](learning-in-public.md)
 
 ### [Module 1: Introduction](01-intro)
 
@@ -156,7 +158,7 @@ To make discussions in Slack more organized:
 
 ## Other courses from DataTalks.Club:
 
-- [Machine Learning Zoomcamp - free 4-month course about ML Engineering](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp)
+- [Machine Learning Zoomcamp - free 4-month course about ML Engineering](http://mlzoomcamp.com)
 - [Data Engineering Zoomcamp - free 9-week course about Data Engineering](https://github.com/DataTalksClub/data-engineering-zoomcamp/)
 
 
@@ -189,7 +191,7 @@ If you want to make sure you don't miss anything:
 
 ## Supporters and partners
 
-Thanks to the course sponsors for making it possible to create this course
+Thanks to the course sponsors for making it possible to run this course
 
 <p align="center">
   <a href="https://mage.ai/">
