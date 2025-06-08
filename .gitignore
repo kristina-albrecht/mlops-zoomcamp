@@ -21,4 +21,8 @@ __pycache__/
 
 
 .DS_Store
-**/mlruns/
+**/mlruns/.env
+**/mlruns/*
+
+**/airflow/logs/*
+**/.env
