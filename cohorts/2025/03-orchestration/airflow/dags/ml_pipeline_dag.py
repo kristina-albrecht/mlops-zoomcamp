@@ -89,11 +89,6 @@ with DAG(
     tags=["download", "preprocessing"],
 ) as dag:
 
-    download_task = PythonOperator(
-        task_id="download_raw_data",
-        python_callable=download_raw_data
-    )
-
     preprocess_task = PythonOperator(
         task_id="run_preprocessing",
         python_callable=run_preprocessing
@@ -109,4 +104,4 @@ with DAG(
         python_callable=register_model
     )
 
-    download_task >> preprocess_task >> train_task >> register_task
+    preprocess_task >> train_task >> register_task

@@ -13,13 +13,16 @@ def dump_pickle(obj, filename: str):
 
 def read_dataframe(filename: str):
     df = pd.read_parquet(filename)
+    print(f"Number of rows in {filename}: {len(df)}")
 
-    df['duration'] = df['lpep_dropoff_datetime'] - df['lpep_pickup_datetime']
+    df['duration'] = df['tpep_dropoff_datetime'] - df['tpep_pickup_datetime']
     df.duration = df.duration.apply(lambda td: td.total_seconds() / 60)
     df = df[(df.duration >= 1) & (df.duration <= 60)]
 
     categorical = ['PULocationID', 'DOLocationID']
     df[categorical] = df[categorical].astype(str)
+
+    print(f"Number of rows after filtering: {len(df)}")
 
     return df
 
@@ -44,6 +47,10 @@ def preprocess(df: pd.DataFrame, dv: DictVectorizer, fit_dv: bool = False):
 @click.option(
     "--dest_path",
     help="Location where the resulting files will be saved"
+)
+@click.option(
+    "--dataset",
+    help="Dataset to process (default: green)",
 )
 def run_data_prep(raw_data_path: str, dest_path: str, dataset: str = "green"):
     # Load parquet files
